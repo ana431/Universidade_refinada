@@ -1,0 +1,9 @@
+CREATE TABLE Aluno_01_matriculado_Disciplina_03 (
+  Aluno_01_idCliente_01 VARCHAR(20) NOT NULL,
+  Disciplina_03_idDisciplina_03 VARCHAR NOT NULL,
+  PRIMARY KEY(Aluno_01_idCliente_01, Disciplina_03_idDisciplina_03),
+  UNIQUE INDEX Aluno_01_has_Disciplina_03_FKIndex1(Aluno_01_idCliente_01),
+  INDEX Aluno_01_has_Disciplina_03_FKIndex2(Disciplina_03_idDisciplina_03)
+);
+
+
